@@ -17,12 +17,13 @@ body {
 .main-div {
     background-color: hsl(0, 0%, 100%);
     margin: 100px auto;
-    width: 50%;
+    width: 45%;
     padding: 30px;
     border-radius: 10px;
     color: hsl(30, 10%, 34%);
     font-weight: 400;
     font-family: 'Outfit';
+
 }
 
 h1 {
@@ -41,18 +42,84 @@ h3 {
     font-weight: 600;
 }
 
-h1,h2{
+h1,
+h2 {
     font-family: 'Young Serif';
 }
 
 img {
     width: 100%;
+    border-radius: 10px;
 }
 
-.indented-header{
+.indented-header {
     text-indent: 30px;
 }
-.indented-text{
+
+.indented-text {
     padding-left: 50px;
     text-indent: 30px;
+}
+
+.note {
+    background-color: hsl(330, 100%, 98%);
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+li {
+    padding: 10px;
+}
+
+li::marker {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+
+}
+
+.horizontal-line {
+    width: 100%;
+    margin: 5px auto;
+    background-color: rgba(0, 0, 0, 0.119);
+    height: 1px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.table-item {
+    justify-self: flex-start;
+    width: 50%;
+}
+
+.col2 {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+@media screen and (max-width: 660px) {
+    .main-div {
+        width: 100vw;
+        margin: 0;
+        box-sizing: border-box;
+        border-radius: 0;
+
+        padding: 0;
+    }
+
+    .custom-padding {
+
+        padding: 30px;
+    }
+
+    img {
+        width: 100vw;
+        border-radius: 0;
+    }
 }
